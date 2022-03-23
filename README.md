@@ -12,4 +12,4 @@ Configから自由にステータスパラメータの追加・削除が行え�
 2. CaffeinStatusContainerを作る -> CaffeinStatus.create();
 3. getCaffeinStatusContainer()を@Overrideしてreturnを[2]で作ったCaffeinStatusContainerにする
 
-※例 -> https://github.com/Momiji14/CaffeinRPG-Status/blob/main/src/main/java/Example/ExampleOfCaffeinStatus.java
+※例 -> https://github.com/CaffeinRPG-server/CaffeinRPG-Status/blob/main/src/main/java/Example/ExampleOfCaffeinStatus.java
