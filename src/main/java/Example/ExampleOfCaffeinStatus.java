@@ -1,9 +1,7 @@
-package caffein.momineko.status;
+package Example;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
-import org.jetbrains.annotations.NotNull;
+import caffein.momineko.status.CaffeinStatus;
+import caffein.momineko.status.CaffeinStatusContainer;
 
 public class ExampleOfCaffeinStatus implements CaffeinStatus {
 

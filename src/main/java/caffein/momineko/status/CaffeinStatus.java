@@ -1,7 +1,5 @@
 package caffein.momineko.status;
 
-import java.util.Map;
-
 public interface CaffeinStatus {
 
     CaffeinStatusContainer getCaffeinStatusContainer();
@@ -20,7 +18,6 @@ public interface CaffeinStatus {
     default void addStatus(CaffeinStatus caffeinStatus) {
         getCaffeinStatusContainer().addStatus(caffeinStatus);
     }
-
 
     default int getStatus(String type) {
         return getCaffeinStatusContainer().getStatus(type);

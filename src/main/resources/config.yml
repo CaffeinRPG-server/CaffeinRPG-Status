@@ -5,3 +5,12 @@ CaffeinStatusType:
 - DEF
 - CriticalRate
 - CriticalResist
+- INT
+- VIT
+- STR
+- DEX
+- DH
+- MND
+- CRT
+- TEN
+- DET

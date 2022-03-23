@@ -1,6 +1,5 @@
 package caffein.momineko.status;
 
-import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.util.HashSet;
