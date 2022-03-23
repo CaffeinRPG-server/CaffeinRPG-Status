@@ -4,6 +4,14 @@ public interface CaffeinStatus {
 
     CaffeinStatusContainer getCaffeinStatusContainer();
 
+    static CaffeinStatusContainer create() {
+        return new CaffeinStatusContainer();
+    }
+
+    static CaffeinStatusContainer clone(CaffeinStatus status) {
+        return new CaffeinStatusContainer(status);
+    }
+
     default void setStatus(String type, int value) {
         getCaffeinStatusContainer().setStatus(type, value);
     }
@@ -15,6 +23,7 @@ public interface CaffeinStatus {
     default void addStatus(String type, int value) {
         getCaffeinStatusContainer().addStatus(type, value);
     }
+
     default void addStatus(CaffeinStatus caffeinStatus) {
         getCaffeinStatusContainer().addStatus(caffeinStatus);
     }

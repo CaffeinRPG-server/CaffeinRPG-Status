@@ -5,7 +5,7 @@ import caffein.momineko.status.CaffeinStatusContainer;
 
 public class ExampleOfCaffeinStatus implements CaffeinStatus {
 
-    private final CaffeinStatusContainer caffeinStatusContainer = new CaffeinStatusContainer();
+    private final CaffeinStatusContainer caffeinStatusContainer = CaffeinStatus.create();
 
     @Override
     public CaffeinStatusContainer getCaffeinStatusContainer() {

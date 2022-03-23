@@ -7,6 +7,12 @@ public class CaffeinStatusContainer implements CaffeinStatus {
 
     private final Map<String, Integer> statusData = new HashMap<>();
 
+    public CaffeinStatusContainer() {}
+
+    public CaffeinStatusContainer(CaffeinStatus status) {
+        statusData.putAll(status.getCaffeinStatusContainer().statusData);
+    }
+
     @Override
     public CaffeinStatusContainer getCaffeinStatusContainer() {
         return this;
