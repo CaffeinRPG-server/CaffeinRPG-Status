@@ -1,0 +1,7 @@
+CaffeinStatusType:
+- MaxHealth
+- MaxMana
+- ATK
+- DEF
+- CriticalRate
+- CriticalResist
