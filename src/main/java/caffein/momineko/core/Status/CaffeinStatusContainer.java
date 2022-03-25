@@ -1,11 +1,11 @@
-package caffein.momineko.status;
+package caffein.momineko.core.Status;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CaffeinStatusContainer implements CaffeinStatus {
 
-    private final Map<String, Integer> statusData = new HashMap<>();
+    private final Map<String, Double> statusData = new HashMap<>();
 
     public CaffeinStatusContainer() {}
 
@@ -19,7 +19,7 @@ public class CaffeinStatusContainer implements CaffeinStatus {
     }
 
     @Override
-    public void setStatus(String type, int value) {
+    public void setStatus(String type, double value) {
         if (CaffeinStatusType.IllegalCheck(type)) {
             statusData.put(type, value);
         } else {
@@ -34,19 +34,19 @@ public class CaffeinStatusContainer implements CaffeinStatus {
     }
 
     @Override
-    public void addStatus(String type, int value) {
-        statusData.merge(type, value, Integer::sum);
+    public void addStatus(String type, double value) {
+        statusData.merge(type, value, Double::sum);
     }
 
     @Override
     public void addStatus(CaffeinStatus caffeinStatus) {
-        for (Map.Entry<String, Integer> entry : caffeinStatus.getCaffeinStatusContainer().statusData.entrySet()) {
-            statusData.merge(entry.getKey(), entry.getValue(), Integer::sum);
+        for (Map.Entry<String, Double> entry : caffeinStatus.getCaffeinStatusContainer().statusData.entrySet()) {
+            statusData.merge(entry.getKey(), entry.getValue(), Double::sum);
         }
     }
 
     @Override
-    public int getStatus(String type) {
+    public double getStatus(String type) {
         if (CaffeinStatusType.IllegalCheck(type)) {
             return statusData.get(type);
         } else {

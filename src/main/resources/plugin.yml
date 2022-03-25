@@ -1,6 +1,12 @@
 name: CaffeinRPG-Status
-version: '${project.version}'
-main: caffein.momineko.status.StatusCore
+version: Experimental
+main: caffein.momineko.core.CaffeinCore
 api-version: 1.17
 authors: [ MomiNeko ]
 description: CaffeinRPG-Status
+
+commands:
+  CaffeinStatus:
+    aliases: cs
+    description: CaffeingRPG-Status
+    usage: /<command>

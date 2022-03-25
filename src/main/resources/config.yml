@@ -1,3 +1,5 @@
+ClassReqExpFormula: '100+lvl*10+(lvl-1)^2'
+
 CaffeinStatusType:
 - MaxHealth
 - MaxMana
@@ -5,12 +7,16 @@ CaffeinStatusType:
 - DEF
 - CriticalRate
 - CriticalResist
-- INT
-- VIT
-- STR
-- DEX
-- DH
-- MND
-- CRT
-- TEN
-- DET
+
+ClassIconDecoration:
+  - "§e§l[%Display%]"
+  - "%Lore%"
+  - "§8==============="
+  - "§7・§e§lレベル§7: §a§l%Level%"
+  - "§7・§e§l経験値§7: §a§l%Exp%/%ReqExp%"
+  - "§7・§e§l最大体力§7: §a§l%MaxHealth%"
+  - "§7・§e§l最大マナ§7: §a§l%MaxMana%"
+  - "§7・§e§l攻撃力§7: §a§l%ATK%"
+  - "§7・§e§l防御力§7: §a§l%DEF%"
+  - "§7・§e§lクリティカル発生§7: §a§l%CriticalRate%"
+  - "§7・§e§lクリティカル耐性§7: §a§l%CriticalResist%"

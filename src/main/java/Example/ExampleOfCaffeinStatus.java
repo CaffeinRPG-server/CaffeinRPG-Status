@@ -1,7 +1,7 @@
 package Example;
 
-import caffein.momineko.status.CaffeinStatus;
-import caffein.momineko.status.CaffeinStatusContainer;
+import caffein.momineko.core.Status.CaffeinStatus;
+import caffein.momineko.core.Status.CaffeinStatusContainer;
 
 public class ExampleOfCaffeinStatus implements CaffeinStatus {
 

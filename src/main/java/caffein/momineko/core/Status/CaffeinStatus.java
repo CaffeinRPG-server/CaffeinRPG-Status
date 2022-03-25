@@ -1,4 +1,4 @@
-package caffein.momineko.status;
+package caffein.momineko.core.Status;
 
 public interface CaffeinStatus {
 
@@ -12,7 +12,7 @@ public interface CaffeinStatus {
         return new CaffeinStatusContainer(status);
     }
 
-    default void setStatus(String type, int value) {
+    default void setStatus(String type, double value) {
         getCaffeinStatusContainer().setStatus(type, value);
     }
 
@@ -20,7 +20,7 @@ public interface CaffeinStatus {
         getCaffeinStatusContainer().setStatus(caffeinStatus);
     }
 
-    default void addStatus(String type, int value) {
+    default void addStatus(String type, double value) {
         getCaffeinStatusContainer().addStatus(type, value);
     }
 
@@ -28,7 +28,7 @@ public interface CaffeinStatus {
         getCaffeinStatusContainer().addStatus(caffeinStatus);
     }
 
-    default int getStatus(String type) {
+    default double getStatus(String type) {
         return getCaffeinStatusContainer().getStatus(type);
     }
 }
