@@ -9,5 +9,5 @@ MaxHealth: 20
 MaxMana: 18
 ATK: 12
 DEF: 8
-CriticalRate: 10
+CriticalRate: 8
 CriticalResist: 6
