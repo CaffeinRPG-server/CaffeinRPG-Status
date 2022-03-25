@@ -1,0 +1,13 @@
+Display: "サンプルクラス"
+Material: END_CRYSTAL
+Lore:
+  - "§a§lお腹がすきました"
+  - "§a§lデータベース分かりません"
+  - "§a§lだれか教えてください"
+
+MaxHealth: 20
+MaxMana: 18
+ATK: 12
+DEF: 8
+CriticalRate: 10
+CriticalResist: 6
